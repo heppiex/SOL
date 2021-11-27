@@ -29,6 +29,44 @@ body {
   width: 100%;
 }
 
+#menu {
+  display: none;
+}
+
+#close:hover {
+  cursor: pointer;
+}
+#close {
+  position: absolute;
+  z-index: 10;
+  width: 40px;
+  top: 3.5rem;
+  left: 82%;
+}
+
+#clickMenu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  z-index: 10;
+}
+
+.hidden {
+  display: none;
+}
+
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(320, 50, 72);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
 .navIcon {
   font-size: 2rem;
 }
@@ -41,9 +79,10 @@ body {
   transition: 0.6s;
   padding: 2.5rem 5.2rem;
   background-color: rgba(320, 50, 72, 0.6);
+  height: 150px;
 }
 
-.mainHeader .logo {
+.logo {
   font-weight: 400;
   color: rgb(0, 0, 0);
   text-decoration: none;
@@ -53,9 +92,16 @@ body {
   font-weight: 400;
   font-size: 3rem;
   position: relative;
+  z-index: 100;
   top: 3.1rem;
   font-family: "Outfit", sans-serif;
   font-size: 4rem;
+  cursor: default;
+}
+
+#logoOverlay {
+  left: 3rem;
+  top: 4.2rem;
 }
 
 .mainHeader ul {
@@ -167,7 +213,7 @@ main {
 }
 
 .item {
-  flex: 2;
+  flex: 1;
   height: 100%;
   background-position: center;
   background-size: cover;
@@ -206,13 +252,13 @@ main {
   background-image: url(../img/pawel-czerwinski-7FqOISWr5V0-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 3rem 0;
+  padding: 2rem 0 3rem;
   color: black;
 }
 
 .subtitle {
   font-size: 3rem;
-  padding-top: 4rem;
+  padding-top: 3rem;
   margin-bottom: 4rem;
   text-align: center;
 }
@@ -221,7 +267,7 @@ main {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .flexRow h2 {
@@ -234,12 +280,14 @@ main {
 .flexRow li {
   max-width: 300px;
   padding-bottom: 0.5rem;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
 }
 
 .team {
   padding-bottom: 3rem;
   color: black;
-  background-image: url(../img/pawel-czerwinski-7FqOISWr5V0-unsplash.jpg);
+  background-image: url(../img/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -270,6 +318,8 @@ main {
 
 .team li {
   margin-bottom: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
 }
 
 .mainFooter {
@@ -290,4 +340,81 @@ main {
 
 .mainFooter li {
   margin-right: 1rem;
+}
+
+@media screen and (max-width: 1350px) {
+  .teamContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .teamGallery {
+    max-width: 600px;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .price p {
+    font-size: 2rem;
+  }
+  .info {
+    font-size: 1.6rem;
+  }
+  .roadmap {
+    padding-bottom: 1rem;
+  }
+  .flexRow {
+    flex-direction: column;
+    align-items: center;
+  }
+  .flexRow h2 {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+  }
+  .flexRow ul {
+    margin-top: 1rem;
+  }
+  .flexRow li {
+    max-width: 350px;
+    font-size: 1rem;
+  }
+  .gallery-wrap {
+    height: 40vh;
+  }
+  .teamGallery {
+    max-width: 450px;
+    margin-bottom: 1rem;
+  }
+  .circle {
+    width: 110px;
+    height: 110px;
+    margin: 0.38rem;
+  }
+  .teamContainer li {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .price p {
+    font-size: 1.6rem;
+  }
+  .mainHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .mainHeader ul {
+    display: none;
+  }
+  #menu {
+    display: block;
+  }
+  #menu:hover {
+    cursor: pointer;
+  }
+  .mainHeader .logo {
+    position: static;
+  }
 }

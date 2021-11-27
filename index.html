@@ -14,6 +14,25 @@
     <title>SOL</title>
   </head>
   <body>
+    <img
+      src="img/close-button-svgrepo-com.svg"
+      alt=""
+      class="hidden"
+      id="close"
+    />
+    <a id="logoOverlay" class="hidden logo">logo</a>
+    <ul id="clickMenu" class="hidden">
+      <li class="navIcon">
+        <a href=""><img src="img/iconmonstr-discord-1.svg" alt="" /></a>
+      </li>
+      <li class="navIcon">
+        <a href=""><img src="img/iconmonstr-instagram-11.svg" alt="" /></a>
+      </li>
+      <li class="navIcon">
+        <a href=""><img src="img/iconmonstr-twitter-1.svg" alt="" /></a>
+      </li>
+      <li class="navIcon mint"><a href="">mint</a></li>
+    </ul>
     <header class="mainHeader">
       <a class="logo">logo</a>
       <ul class="navBar">
@@ -28,6 +47,11 @@
         </li>
         <li class="navIcon mint"><a href="">mint</a></li>
       </ul>
+      <svg viewBox="0 0 100 80" width="40" height="40" id="menu">
+        <rect width="100" height="20"></rect>
+        <rect y="30" width="100" height="20"></rect>
+        <rect y="60" width="100" height="20"></rect>
+      </svg>
     </header>
     <main>
       <div class="price">
@@ -216,6 +240,7 @@
         </ul>
       </div>
     </footer>
+    <div class="hidden" id="overlay"></div>
     <script src="index.js"></script>
   </body>
 </html>
