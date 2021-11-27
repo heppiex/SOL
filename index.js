@@ -34,10 +34,7 @@ overlay.addEventListener("click", closeMenu);
 closeOverlay.addEventListener("click", closeMenu);
 
 (function () {
-  const doc = document.documentElement;
-  const w = window;
-
-  let prevScroll = w.scrollY || doc.scrollTop;
+  let prevScroll = window.scrollY || document.documentElement.scrollTop;
   let curScroll;
   let direction = 0;
   let prevDirection = 0;
@@ -65,7 +62,7 @@ closeOverlay.addEventListener("click", closeMenu);
   };
 
   const toggleHeader = function (direction, curScroll) {
-    if (direction === 2 && curScroll > 52) {
+    if (direction === 2 && curScroll > 150) {
       //replace 52 with the height of your header in px
 
       headerHide.classList.add("hideHeader");
