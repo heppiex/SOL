@@ -449,11 +449,11 @@ main {
     display: none;
   }
   .question:last-child {
-    padding-bottom: 3rem;
+    padding-bottom: 4rem;
   }
 
   .role {
-    padding-bottom: 2rem;
+    padding-top: 2rem;
   }
 
   .roleRight {
