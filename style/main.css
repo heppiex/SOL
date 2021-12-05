@@ -567,10 +567,21 @@ main {
 }
 
 @media screen and (max-width: 366px) {
-  #logoOverlay {
-    top: 1.8rem;
+  .logo {
+    font-size: 2.5rem;
   }
+
+  #logoOverlay span {
+    width: 100%;
+  }
+
   #brHide {
     display: block;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .logo {
+    font-size: 2.2rem;
   }
 }
