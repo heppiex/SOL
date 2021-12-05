@@ -326,7 +326,7 @@ main {
 .teamContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   max-width: 1300px;
   margin: auto;
 }
