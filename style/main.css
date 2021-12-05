@@ -232,23 +232,23 @@ main {
 }
 
 .item-1 {
-  background-image: url("../img/1.jpg");
+  background-image: url(../img/1.jpg);
 }
 
 .item-2 {
-  background-image: url("../img/2.jpg");
+  background-image: url(../img/2.jpg);
 }
 
 .item-3 {
-  background-image: url("../img/3.jpg");
+  background-image: url(../img/3.jpg);
 }
 
 .item-4 {
-  background-image: url("../img/4.jpg");
+  background-image: url(../img/4.jpg);
 }
 
 .item-5 {
-  background-image: url("../img/5.jpg");
+  background-image: url(../img/5.jpg);
 }
 
 .roadmap {
