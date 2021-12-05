@@ -193,6 +193,7 @@ main {
 .text p,
 .text li {
   margin-top: 1rem;
+  line-height: 1.2rem;
 }
 
 .text li {
@@ -307,6 +308,7 @@ main {
 
 .question p {
   margin-bottom: 1rem;
+  line-height: 1.2rem;
 }
 
 .question hr {
