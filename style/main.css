@@ -358,6 +358,11 @@ main {
   margin-top: 1rem;
 }
 
+.role div p a {
+  color: black;
+  text-decoration: underline;
+}
+
 .mainFooter {
   background-color: rgba(320, 50, 72);
 }
