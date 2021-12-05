@@ -378,6 +378,44 @@ main {
   margin-right: 1rem;
 }
 
+@media screen and (min-width: 1500px) {
+  .hideHr hr {
+    display: none;
+  }
+  .hideHr {
+    padding-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 1017px) {
+  .hideHr1500 hr {
+    display: none;
+  }
+  .hideHr1500 {
+    padding-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 1016px) {
+  .question:last-child hr {
+    display: none;
+  }
+  .question:last-child {
+    padding-bottom: 4rem;
+  }
+
+  .role {
+    padding-top: 2rem;
+  }
+
+  .roleRight {
+    flex-direction: row-reverse;
+  }
+  .gallery-wrap {
+    height: 40vh;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .price p {
     font-size: 2rem;
@@ -426,39 +464,7 @@ main {
   .mainHeader .logo {
     position: static;
   }
-}
-
-@media screen and (min-width: 1500px) {
-  .hideHr hr {
-    display: none;
-  }
-  .hideHr {
-    padding-bottom: 3rem;
-  }
-}
-
-@media screen and (min-width: 1017px) {
-  .hideHr1500 hr {
-    display: none;
-  }
-  .hideHr1500 {
-    padding-bottom: 3rem;
-  }
-}
-
-@media screen and (max-width: 1016px) {
-  .question:last-child hr {
-    display: none;
-  }
-  .question:last-child {
-    padding-bottom: 4rem;
-  }
-
-  .role {
-    padding-top: 2rem;
-  }
-
-  .roleRight {
-    flex-direction: row-reverse;
+  .gallery-wrap {
+    height: 30vh;
   }
 }
