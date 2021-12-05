@@ -45,6 +45,10 @@ body {
   left: 84%;
 }
 
+#brHide {
+  display: none;
+}
+
 #clickMenu {
   position: absolute;
   top: 50%;
@@ -260,6 +264,7 @@ main {
 
 .subtitle {
   font-size: 3rem;
+  line-height: 3rem;
   padding-top: 4rem;
   margin-bottom: 4rem;
   text-align: center;
@@ -349,7 +354,7 @@ main {
 .role div {
   display: flex;
   flex-direction: column;
-  width: 350px;
+  max-width: 350px;
 }
 
 .role div p {
@@ -471,5 +476,101 @@ main {
   }
   .gallery-wrap {
     height: 30vh;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  #logoOverlay {
+    top: 3.1rem;
+  }
+
+  #close {
+    left: 80%;
+  }
+
+  .logo {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .role {
+    max-width: 500px;
+  }
+
+  .role div {
+    max-width: 300px;
+  }
+  .role div p {
+    font-size: 1rem;
+  }
+
+  .role div h2 {
+    font-size: 1.2rem;
+  }
+
+  .role img {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #close {
+    left: 75%;
+  }
+
+  .roadmap {
+    justify-content: center;
+  }
+
+  .flexRow {
+    width: 250px;
+  }
+
+  .flexRow h2 {
+    width: 200px;
+  }
+
+  .mainFooter h1 {
+    font-size: 1.3rem;
+  }
+
+  .role {
+    max-width: 500px;
+  }
+
+  .role div {
+    max-width: 250px;
+  }
+
+  .role div p {
+    font-size: 1rem;
+  }
+
+  .role div h2 {
+    font-size: 1.2rem;
+  }
+
+  .role img {
+    height: 60px;
+    width: 60px;
+  }
+
+  #clickMenu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #clickMenu li {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 366px) {
+  #logoOverlay {
+    top: 1.8rem;
+  }
+  #brHide {
+    display: block;
   }
 }
